@@ -18,7 +18,7 @@ int main()
 	filter(files, "SudokuExample");
 	std::vector<int> sudokuContent{};
 
-	for (auto file : files) {
+	for (auto & file : files) {
 		std::ifstream myFile(file);
 
 		int dim{};
